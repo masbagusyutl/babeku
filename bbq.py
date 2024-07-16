@@ -49,7 +49,8 @@ def process_accounts(file_path, url, max_taps=10):
             }
             payload = {
                 "id_user": id_user,
-                "mm": 100
+                "mm": 100,
+                "game": "dkFwbk91eHNLNGRPd1NwTXBMSFVScjVDeTZiQ0FYbG1NSHRCcm50Z3hSOD0="
             }
             print(f"Memproses akun {index} dari {total_accounts}: {payload['id_user']}")
             tap_tap_task(headers, payload, url, max_taps)
